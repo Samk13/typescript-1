@@ -1,13 +1,16 @@
-function myPoint2D(points) {
-    var point1 = { x: 93279, y: 832724 };
-    var element = document.getElementById('app');
-    element.innerHTML = "\n    <h1>points are </h1>\n    <h1>X = " + points.x + "</h1>\u00A7\n    <h1>Y = " + points.y + "</h1>\n    ";
-    return console.log(points);
-}
-myPoint2D({ x: 2893, y: 923823 });
-console.log(0 == undefined);
-console.log(0 === null);
-var someGlobal;
-if (typeof someGlobal !== 'undefined') {
-    console.log(someGlobal);
-}
+"use strict";
+exports.__esModule = true;
+var methods_1 = require("./methods");
+methods_1.toInt('287364');
+methods_1.foobar();
+var count = methods_1.createCounter();
+console.log(count.getVal());
+console.log(count.increment());
+console.log(count.increment());
+console.log(count.increment());
+console.log(count.increment());
+console.log(count.increment());
+console.log(count.getVal());
+console.log(.1 + .2); // 0.30000000000000004
+console.log(Number.isNaN(NaN)); // true
+console.log(Number.MAX_VALUE + Math.pow(10, 1000)); // infinity ! 
